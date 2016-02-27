@@ -1,0 +1,61 @@
+body {
+    background: url("../images/bg.png");
+}
+
+@font-face {
+    font-family: Aasgular;
+    src: url("../fonts/KeepCalm.ttf");
+}
+
+@keyframes rotateYAxis360 {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.rotate {
+    transition-property: all;
+    animation: rotateYAxis360 5s ease-in-out infinite;
+    transform-style: preserve-3d;
+}
+
+#aasgular_text {
+    font-family: aasgular;
+    color: whitesmoke;
+    font-size: 3.5vw;
+    margin-bottom: 0;
+}
+
+#aasgular_explanations {
+    font-family: aasgular;
+    color: whitesmoke;
+    font-size: 1vw;
+}
+
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    width: 100%;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
